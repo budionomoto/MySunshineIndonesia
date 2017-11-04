@@ -42,6 +42,7 @@
                     android:src="@mipmap/ic_launcher" />
 
                 <TextView
+                    android:id="@+id/weather_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -50,7 +51,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/weather_temperatur"
+                android:id="@+id/weather_temperature"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -61,7 +62,10 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/weather_List"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></LinearLayout>
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
